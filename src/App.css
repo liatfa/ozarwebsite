@@ -1,38 +1,210 @@
-.App {
+
+body {
+  margin-bottom: 100px;
+}
+.background-section {
+  background-image: url('https://static1.s123-cdn-static-a.com/uploads/6275102/2000_6285f7ec3a8f5.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0px -250px;
+  position: relative;
+}
+.background-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); 
+ 
+}
+
+.dashboard{
+ color: white;
+ display: flex;
+ position: sticky;
+ top: 0px;
+ background-color: transparent;
+ 
+}
+
+#miniTitle{
+  margin-left:30%;
+  font-size: 35px;
+}
+.btns{
+  margin-left: 10%;
+}
+#btn{
+  margin-top: 10%;
+  height: 50px;
+  width: 100px;
+  font-size: medium;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+#btn:hover{
+  font-size: large;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.title{
+ position: relative ;
+ text-align: right;
+
+}
+
+
+#titleTxt{ 
+color: white;
+margin-right: 10%;
+margin-top: 10%;
+font-size: 50px;
+}
+#span-title{
+  font-size: 65px;
+  font-weight: bold;
+}
+#title-btn{
+  color: white;
+  margin-right: 10%;
+  height: 50px;
+  width: 100px;
+  font-size: large;
+  font-weight: bold;
+  background-color: orange;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+#title-btn:hover{
+  background-color: rgb(220, 143, 0);
+ 
+}
+svg{
+ 
+}
+.intro{
+  margin-top: 5%;
+}
+
+.imgTxt{
+  margin-left: 12%;
+  margin-top: 5%;
+  display: flex;
+  text-align: right;
+}
+
+h1{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#intro-txt{
+  font-size: large;
+  background-color: #e5e5e5e9; 
+  text-align: right;
+  padding: 50px;
+  height: 300px;
+  width: 500px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.services{
+margin-top: 20%;
+align-items: center;
+}
+.services-container{
+
+  display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.item{
+  height: 100px;
+  margin: 4%;
+  font-size: 17px;
+}
+
+.item-6{
+  position: relative;
+  top: 215px;
+  right: 31%;
+}
+
+.item-4{
+  position: relative;
+  top: 215px;
+  right: 31%;
+}
+
+.item-5{
+  position: relative;
+  top: 215px;
+  right: 31%;
+}
+
+.item-1{
+  position: relative;
+  left: 23%;
+}
+
+.item-2{
+  position: relative;
+  left: 23%;
+}
+
+.item-3{
+  position: relative;
+  left: 23%;
+}
+
+.img-ser{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.contact{
+  margin-top: 30%;
+}
+
+.emailForm{
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-right: 25%;
 }
 
-.App-link {
-  color: #61dafb;
+input,
+textarea{
+margin: 10px 0px;
+width: 400px;
+text-align: right;
+font-size: 15px;
+
+
+}
+input{
+  height: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#contact-btn{
+  width: 400px;
+  height: 40px;
+}
+
+#homepageShapeDesign.shapeBottom, #homepageShapeDesign.shapeTop {
+  height: calc(var(--homepageShapeDividerList_Size) + 5px) !important;
+}
+#top-section .shapeBottom {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+}
+#homepageShapeDesign {
+  fill: #ffffff;
+}
+svg:not(:root) {
+  overflow: hidden;
 }
