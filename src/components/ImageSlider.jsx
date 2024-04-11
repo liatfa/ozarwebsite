@@ -1,17 +1,17 @@
-import React, { useState, useEffect } from 'react';
+// import React, { useState, useEffect } from 'react';
 
-function ImageSlider({ images, interval }) {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+// function ImageSlider({ images, interval }) {
+//   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, interval);
+//   useEffect(() => {
+//     const intervalId = setInterval(() => {
+//       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+//     }, interval);
 
-    return () => clearInterval(intervalId);
-  }, [images, interval]);
+//     return () => clearInterval(intervalId);
+//   }, [images, interval]);
 
-  return <img src={images[currentImageIndex]} alt="Slideshow" />;
-}
+//   return <img src={images[currentImageIndex]} alt="Slideshow" />;
+// }
 
-export default ImageSlider;
+

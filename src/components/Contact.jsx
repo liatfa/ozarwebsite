@@ -40,8 +40,11 @@ const Contact = () => {
     <div className='contact'>
        <h1>צור קשר</h1>
 
+              <div className='form-info-wrapper'>
        <form onSubmit={handleSubmit} className='emailForm'>
-
+        <div className='contact-row'>
+         
+         
        <input type="text"
        placeholder='שם' 
        value={name}
@@ -52,6 +55,9 @@ const Contact = () => {
        value={num}
        onChange={(e)=>setNum(e.target.value)}
        />
+
+        </div>
+
        
        <input type="email"
        placeholder='כתובת הדואר האלקטרוני שלך' 
@@ -72,10 +78,17 @@ const Contact = () => {
       <button id='contact-btn' type='submit'>שלח</button>
 
 
-
-
-
        </form>
+
+       <div className='contact-info'>
+ 
+         
+        <p>ראשון לציון, Israel</p>
+        <p> 054-943-5431</p>
+        <p>ozar.psychotherapy@gmail.com</p>     
+
+       </div>
+       </div>
     </div>
   )
 }

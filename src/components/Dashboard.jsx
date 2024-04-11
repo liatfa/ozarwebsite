@@ -24,19 +24,33 @@ const Dashboard = () => {
 
   const dashboardStyle = {
     backgroundColor: isScrolled ? 'white' : 'transparent',
+    position: 'sticky',
+    top: 0,
+    zIndex: 999,
+  };
+
+  const dashboardBtnStyle = {
     color: isScrolled ? 'black' : 'white',
   };
+
+  const dashboardTitleStyle = {
+    color: isScrolled ? 'black' : 'white',
+  };
+
+
+
+  
   
   return (
     <div className='dashboard' style={dashboardStyle}> 
         <div className='btns'>
-        <button id='btn'>בית</button>
-        <button id='btn'>אודות</button>
-        <button id='btn'>שירותים</button>
-        <button id='btn'>צור קשר</button>
+        <button id='btn'  style={dashboardBtnStyle}>בית</button>
+        <button id='btn'  style={dashboardBtnStyle}>אודות</button>
+        <button id='btn'  style={dashboardBtnStyle}>שירותים</button>
+        <button id='btn'  style={dashboardBtnStyle}>צור קשר</button>
     </div>
 
-    <div id='miniTitle'>
+    <div id='miniTitle' style={dashboardTitleStyle}>
         <p>Ozar-Psychotherapy</p>
         </div>
     </div>
