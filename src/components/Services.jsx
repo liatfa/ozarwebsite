@@ -1,5 +1,7 @@
 import React from 'react'
 import cbt from "../pics/cbt.jpg"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faBackward,faForward  } from '@fortawesome/free-solid-svg-icons';
 
 const Services = () => {
 
@@ -15,7 +17,7 @@ const Services = () => {
 const uploadImg=()=>{
 
   const items = arr.map(({ pic, txt }) => (
-    <div id='item' key={txt} style={{ backgroundImage: `url(${pic})` }}>
+      <div className='item' style={{ backgroundImage: `url(${pic})` }}>
       <div id='ser-txt'>{txt}</div>
     </div>
   ));
@@ -24,6 +26,15 @@ const uploadImg=()=>{
 
 }
 
+const scrollLeft = () => {
+  const container = document.querySelector('.services-container');
+  container.scrollBy({ left: -300, behavior: 'smooth' });
+};
+
+const scrollRight = () => {
+  const container = document.querySelector('.services-container');
+  container.scrollBy({ left: 300, behavior: 'smooth' });
+};
   return (
     <div className='services'>
 
@@ -72,10 +83,18 @@ const uploadImg=()=>{
       </div> */}
 
 
-      <div className='services-container'>
+<div className='services-scroll'>
+
+      <button className='icon left-icon' onClick={scrollLeft}><FontAwesomeIcon icon={faBackward} size='2xl' style={{color:'white'}}  /></button>
+
+      <div id='cover'>
+      <div className='services-container'>  
          {uploadImg()}
       </div>
+      </div> 
 
+      <button className='icon right-icon' onClick={scrollRight}><FontAwesomeIcon icon={faForward} size='2xl' style={{color:'white'}}  /></button>
+ </div>
     </div>
   )
 }

@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
 
 const Dashboard = () => {
 
@@ -31,29 +30,30 @@ const Dashboard = () => {
     top: isScrolled ? 0 : 'auto',
     left: 0,
     right: 0,
-    height: isScrolled ? '80px' : '150px',
+    height: isScrolled ? '60px' : '100px',
+    borderBottom: isScrolled ? 'solid gray' : 'none',
    
   };
 
   const dashboardBtnStyle = {
-    color: isScrolled ? 'black' : 'white',
+    color: isScrolled ? 'black' : 'olive',
   };
 
   const dashboardTitleStyle = {
-    color: isScrolled ? 'black' : 'white',
+    color: isScrolled ? 'black' : 'olive',
   };
 
-
+  
 
   
   
   return (
     <div className='dashboard' style={dashboardStyle}> 
         <div className='btns'>
-       <Link to='/title'> <button id='btn'  style={dashboardBtnStyle}>בית</button> </Link>
-       <Link to='/intro'> <button id='btn'  style={dashboardBtnStyle}>אודות</button> </Link> 
-       <Link to='/services'> <button id='btn'  style={dashboardBtnStyle}>שירותים</button> </Link> 
-       <Link to='/contact'> <button id='btn'  style={dashboardBtnStyle}>צור קשר</button>  </Link> 
+       <button className='btn' id='home' style={dashboardBtnStyle} >בית</button> 
+       {/* <button id='btn'  style={dashboardBtnStyle}>אודות</button>  */}
+      <button className='btn' id='services' style={dashboardBtnStyle}  >שירותים</button>  
+       <button className='btn' id='contact' style={dashboardBtnStyle}  >צור קשר</button> 
     </div>
 
     <div id='miniTitle' style={dashboardTitleStyle}>

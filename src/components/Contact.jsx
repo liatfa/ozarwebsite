@@ -1,5 +1,7 @@
 import React, {useState} from 'react'
 import emailjs from '@emailjs/browser';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faPhone,faEnvelope,faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
 const Contact = () => {
 
@@ -7,6 +9,16 @@ const Contact = () => {
   const [email, setEmail]=useState('');
   const [message, setMessage]=useState('');
   const [num, setNum]= useState('');
+
+  // const copyEmail=(email)=>{
+  //   navigator.clipboard.writeText(email)
+  //   .then(()=>{
+  //     document.getElementById('copied').innerHTML= "copied";
+  //   })
+  //   .catch((err)=>{
+  //     console.log('failed to copy',err);
+  //   })
+  // }
 
   const handleSubmit =(e)=>{
      e.preventDefault()
@@ -83,9 +95,10 @@ const Contact = () => {
        <div className='contact-info'>
  
          
-        <p>ראשון לציון, Israel</p>
-        <p> 054-943-5431</p>
-        <p>ozar.psychotherapy@gmail.com</p>     
+        <p> <FontAwesomeIcon icon={faLocationDot} /> ראשון לציון, Israel</p>
+        <p> <FontAwesomeIcon icon={faPhone} /> 054-943-5431</p>
+        <a style={{color:'black', textDecoration:'none' }} href="mailto:ozar.psychotherapy@gmail.com"> <p> <FontAwesomeIcon icon={faEnvelope} /> ozar.psychotherapy@gmail.com</p>      </a>
+      
 
        </div>
        </div>
