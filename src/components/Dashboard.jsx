@@ -30,17 +30,16 @@ const Dashboard = () => {
     top: isScrolled ? 0 : 'auto',
     left: 0,
     right: 0,
-    height: isScrolled ? '60px' : '100px',
-    borderBottom: isScrolled ? 'solid gray' : 'none',
-   
+    height: isScrolled ? '60px' : '70px',
+    borderBottom: isScrolled ? '2px solid black' : 'none',
   };
 
   const dashboardBtnStyle = {
-    color: isScrolled ? 'black' : 'olive',
+    color: isScrolled ? 'black' : 'black',
   };
 
   const dashboardTitleStyle = {
-    color: isScrolled ? 'black' : 'olive',
+    color: isScrolled ? 'black' : 'black',
   };
 
   
@@ -48,7 +47,10 @@ const Dashboard = () => {
   
   
   return (
-    <div className='dashboard' style={dashboardStyle}> 
+    <div className='dashboard-container' > 
+      
+      <div className='dashboard' style={dashboardStyle}> 
+
         <div className='btns'>
        <button className='btn' id='home' style={dashboardBtnStyle} >בית</button> 
        {/* <button id='btn'  style={dashboardBtnStyle}>אודות</button>  */}
@@ -59,7 +61,23 @@ const Dashboard = () => {
     <div id='miniTitle' style={dashboardTitleStyle}>
         Ozar-Psychotherapy
         </div>
+        
     </div>
+    {/* <svg
+       xmlns="http://www.w3.org/2000/svg" 
+       viewBox="0 0 1440 320"
+       className={isScrolled ? 'svg-fixed' : 'svg-relative'} 
+       >
+      <path
+      fill="#0099ff"
+      fill-opacity="0.1"
+      d="M0,0L60,37.3C120,75,240,149,360,202.7C480,256,600,288,720,282.7C840,277,960,235,
+      1080,229.3C1200,224,1320,256,1380,272L1440,288L1440,0L1380,0C1320,0,1200,0,1080
+      ,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"> 
+      </path>
+     </svg> */}
+    </div>
+    
     
   )
 }

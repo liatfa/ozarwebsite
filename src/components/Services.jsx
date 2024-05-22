@@ -1,24 +1,25 @@
-import React from 'react'
-import cbt from "../pics/cbt.jpg"
+import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faBackward,faForward  } from '@fortawesome/free-solid-svg-icons';
+import {faBackward,faForward, } from '@fortawesome/free-solid-svg-icons';
 
 const Services = () => {
 
   const arr=[
-  {pic:"https://static1.s123-cdn-static-a.com/uploads/6275102/400_6284bad0478e5.png" , txt:"טיפול רגשי "},
-  {pic:"https://static1.s123-cdn-static-a.com/uploads/6275102/400_6284bbe63b490.png&quot" , txt:"NLP טיפול בשיטת"},
-  {pic: cbt , txt:"CBT טיפול בשיטת"},
-  {pic:"https://static1.s123-cdn-static-a.com/uploads/6275102/400_6284bae4dac7a.jpg" , txt:"הדרכת הורים"},
-  {pic:"https://static1.s123-cdn-static-a.com/uploads/6275102/400_6284bb62c6301.png" , txt:"טיפול בפחדים וחרדות"},
-  {pic:"https://static1.s123-cdn-static-a.com/uploads/6275102/400_6284bb7c50d57.png" , txt:"טיפול בהפרעת קשב וריכוז"},
+  {pic:"https://meymadim.co.il/wp-content/uploads/2020/06/icon5.jpg" , txt:"טיפול רגשי "},
+  {pic:"https://meymadim.co.il/wp-content/uploads/2020/07/new-icon5.jpg" , txt:"NLP טיפול בשיטת"},
+  {pic: 'https://meymadim.co.il/wp-content/uploads/2020/07/new-icon5.jpg' , txt:"CBT טיפול בשיטת"},
+  {pic:"https://meymadim.co.il/wp-content/uploads/2020/06/new-icon8.jpg" , txt:"הדרכת הורים"},
+  {pic:"https://meymadim.co.il/wp-content/uploads/2020/07/new-icon1.jpg" , txt:"טיפול בפחדים וחרדות"},
+  {pic:"https://meymadim.co.il/wp-content/uploads/2020/07/new-icon2.jpg" , txt:"טיפול בהפרעת קשב וריכוז"},
 ]
 
 const uploadImg=()=>{
 
   const items = arr.map(({ pic, txt }) => (
-      <div className='item' style={{ backgroundImage: `url(${pic})` }}>
+      <div className='item'>
+      <div id='ser-pic'> <img className='small-img' src={pic} alt="pic" /> </div>
       <div id='ser-txt'>{txt}</div>
+      <div> <button id='ser-btn'> קרא עוד</button> </div>
     </div>
   ));
 
@@ -85,7 +86,7 @@ const scrollRight = () => {
 
 <div className='services-scroll'>
 
-      <button className='icon left-icon' onClick={scrollLeft}><FontAwesomeIcon icon={faBackward} size='2xl' style={{color:'white'}}  /></button>
+      <button className='icon left-icon' onClick={scrollLeft}><FontAwesomeIcon icon={faBackward} size='2xl' style={{color:'black'}}  /></button>
 
       <div id='cover'>
       <div className='services-container'>  
@@ -93,7 +94,7 @@ const scrollRight = () => {
       </div>
       </div> 
 
-      <button className='icon right-icon' onClick={scrollRight}><FontAwesomeIcon icon={faForward} size='2xl' style={{color:'white'}}  /></button>
+      <button className='icon right-icon' onClick={scrollRight}><FontAwesomeIcon icon={faForward} size='2xl' style={{color:'black'}}  /></button>
  </div>
     </div>
   )

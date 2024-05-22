@@ -1,6 +1,6 @@
 import React from 'react'
 // import ImageSlider from './ImageSlider';
-import psychologist from "../pics/psychologist.jpg"
+import TwoFemale from "../pics/TwoFemale.jpg"
 
 const Intro = () => {
 
@@ -20,9 +20,10 @@ const Intro = () => {
       <ImageSlider images={images} interval={3000} />
       </div> */}
 
-      <img id='intro-img' src={psychologist} alt="pic" />
+      <img id='intro-img' src={TwoFemale} alt="pic" />
       
       <div id='intro-txt' dir='rtl'>
+        <h2>קצת עליי...</h2>
       נעים מאוד,
       <br />
 אני אוצר מלי שמעון, פסיכותרפיסטית מורשת ומטפלת קוגנטיבית התנהגותית בשיטת CBT.

@@ -22,16 +22,20 @@ function App() {
   return (
     <div className="App">
 
+
 <Dashboard />
+<BackgroundSection>
 
-{/* <BackgroundSection> */}
+    {/* {sideBySide()} */}
+  
+   <Title/>
+ 
+         
 
-    {sideBySide()}
-
-{/* </BackgroundSection> */}
+</BackgroundSection>
            
  
- 
+<Intro/>
  <Services/>
   <Contact/>
   
