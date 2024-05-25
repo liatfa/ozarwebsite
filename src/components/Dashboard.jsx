@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Intro from "./Intro"
 
 const Dashboard = () => {
 
@@ -51,12 +52,18 @@ const Dashboard = () => {
       
       <div className='dashboard' style={dashboardStyle}> 
 
-        <div className='btns'>
-       <button className='btn' id='home' style={dashboardBtnStyle} >בית</button> 
-       {/* <button id='btn'  style={dashboardBtnStyle}>אודות</button>  */}
+        <nav className='btns'>
+       {/* <button className='btn' id='home' style={dashboardBtnStyle} >בית</button> 
+       <button id='btn'  style={dashboardBtnStyle}>אודות</button> 
       <button className='btn' id='services' style={dashboardBtnStyle}  >שירותים</button>  
-       <button className='btn' id='contact' style={dashboardBtnStyle}  >צור קשר</button> 
-    </div>
+       <button className='btn' id='contact' style={dashboardBtnStyle}  >צור קשר</button>  */}
+       
+       <a href= '#introComp' className='btn' id='about' style={dashboardBtnStyle}>אודות</a>
+       <a href='#titleComp' className='btn' id='home' style={dashboardBtnStyle}>בית</a>
+       <a href="#servicesComp" className='btn' id='services' style={dashboardBtnStyle}>שירותים</a>
+       <a href="#contactComp" className='btn' id='contact' style={dashboardBtnStyle}>צור קשר</a>
+    </nav>
+    
 
     <div id='miniTitle' style={dashboardTitleStyle}>
         Ozar-Psychotherapy

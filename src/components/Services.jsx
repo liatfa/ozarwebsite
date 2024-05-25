@@ -29,17 +29,17 @@ const uploadImg=()=>{
 
 const scrollLeft = () => {
   const container = document.querySelector('.services-container');
-  container.scrollBy({ left: -300, behavior: 'smooth' });
+  container.scrollBy({ left: -100, behavior: 'smooth' });
 };
 
 const scrollRight = () => {
   const container = document.querySelector('.services-container');
-  container.scrollBy({ left: 300, behavior: 'smooth' });
+  container.scrollBy({ left: 100, behavior: 'smooth' });
 };
   return (
-    <div className='services'>
+    <div id='servicesComp' className='services'>
 
-      <h1>שירותים</h1>
+      <h1 style={{marginRight:'10%'}} >שירותים</h1>
 
       {/* <div className='services-container'>
 

@@ -49,7 +49,7 @@ const Contact = () => {
   }
 
   return (
-    <div className='contact'>
+    <div id='contactComp' className='contact'>
        <h1>צור קשר</h1>
 
               <div className='form-info-wrapper'>
@@ -92,15 +92,27 @@ const Contact = () => {
 
        </form>
 
-       <div className='contact-info'>
- 
-         
-        <p> <FontAwesomeIcon icon={faLocationDot} /> ראשון לציון, Israel</p>
-        <p> <FontAwesomeIcon icon={faPhone} /> 054-943-5431</p>
-        <a style={{color:'black', textDecoration:'none' }} href="mailto:ozar.psychotherapy@gmail.com"> <p> <FontAwesomeIcon icon={faEnvelope} /> ozar.psychotherapy@gmail.com</p>      </a>
-      
+       {/* <div className='contact-info'
+       
+       >
+      <div className='contact-item'>
+        <FontAwesomeIcon icon={faLocationDot} className='icon' />
+        <p>ראשון לציון, Israel</p>
+      </div>
 
-       </div>
+      <div className='contact-item'>
+        <FontAwesomeIcon icon={faPhone} className='icon' />
+        <p>054-943-5431</p>
+      </div>
+
+      <a style={{ color: 'black', textDecoration: 'none' }} href="mailto:ozar.psychotherapy@gmail.com">
+        <div className='contact-item'>
+          <FontAwesomeIcon icon={faEnvelope} className='icon' />
+          <p>ozar.psychotherapy@gmail.com</p>
+        </div>
+      </a>
+
+    </div> */}
        </div>
     </div>
   )

@@ -5,7 +5,7 @@ const Title = () => {
 
   return (
   
-    <div className='title'>
+    <div id='titleComp' className='title'>
       <div id='titleTxt'>
         <p>
         <span id='span-title'> אוצר מלי שמעון </span>

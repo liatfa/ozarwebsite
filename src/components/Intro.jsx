@@ -10,7 +10,7 @@ const Intro = () => {
   //   'https://static1.s123-cdn-static-a.com/uploads/6275102/800_6285f6aab8bb0.png',
   // ];
   return (
-    <div className='intro'>
+    <div id='introComp' className='intro'>
 
       
       
