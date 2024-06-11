@@ -36,11 +36,15 @@ const Dashboard = () => {
   };
 
   const dashboardBtnStyle = {
-    color: isScrolled ? 'black' : 'black',
+    // color: isScrolled ? 'black' : 'black',
+    // this checks if the page is scrolled but it gives the same output no mater what the value is
+    color: 'black',
+    width: 'max-content'
   };
 
   const dashboardTitleStyle = {
-    color: isScrolled ? 'black' : 'black',
+    // color: isScrolled ? 'black' : 'black',
+    color: 'black',
   };
 
   

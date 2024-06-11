@@ -15,12 +15,14 @@ const Intro = () => {
       
       
       
-        <div className='imgTxt'>
+      <div className='imgTxt'>
         {/* <div id='imageSlider'>
       <ImageSlider images={images} interval={3000} />
       </div> */}
 
-      <img id='intro-img' src={TwoFemale} alt="pic" />
+        <img id='intro-img' src={TwoFemale} alt="pic" />
+
+      </div>
       
       <div id='intro-txt' dir='rtl'>
         <h2>קצת עליי...</h2>
@@ -39,7 +41,7 @@ const Intro = () => {
 
       </div>
 
-        </div>
+        
       
      
     </div>

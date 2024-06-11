@@ -7,6 +7,52 @@
   }
 }
 
+@media only screen and (min-width: 1145px) {
+  #span-title {
+    width: max-content;
+  }
+  #intro-img{
+    height: 380px;
+    margin-top: 8%;
+  }
+}
+@media only screen and (max-width: 1145px) {
+  #intro-img{
+    height: 250px;
+    margin-top: 15%;
+  }
+}
+
+@media only screen and (min-width: 856px) {
+  #miniTitle{
+    margin-left: 50px;
+    margin-right: 100px;
+    font-size: 30px;
+    margin-top: 10px;
+  }
+  #intro-txt{
+    height: 300px;
+  }
+  #title-image{width: 150%}
+  #titleTxt{
+    font-size: 50px;
+  }
+}
+@media only screen and (max-width: 856px) {
+  #miniTitle{
+    margin-right: 170px;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  #intro-txt{
+    overflow: scroll;
+  }
+  #title-image{width: 100%}
+  #titleTxt{
+    font-size: 40px;
+  }
+}
+
 body {
   margin-bottom: 100px;
   align-items: center;
@@ -17,12 +63,16 @@ body {
 }
 
 .background-section {
-  background-image: url('./pics/psycholistBackground.jpg');
-  background-size:60%;
-  background-repeat: no-repeat;
-  background-position: 100px -150px;
-  position: relative;
+  /* background-image: url('./pics/psycholistBackground.jpg'); */
+  /* background-size:60%; */
+  /* background-repeat: no-repeat; */
+  /* background-position: 100px -150px; */
+  /* position: relative; */
+  
+
   /* background-attachment: fixed; */
+  
+  height: 800px;
 }
 /* .background-overlay {
   position: absolute;
@@ -43,6 +93,7 @@ body {
 
 .dashboard{
  display: flex;
+ justify-content: space-between;
  height: 50px;
 }
 .dashboard-container {
@@ -65,21 +116,31 @@ body {
   z-index: -1; 
 } */
 
-#miniTitle{
+/* #miniTitle{
   cursor: pointer;
   color:black;
   margin-left:45%;
+  margin-left: 50px;
+  margin-right: 100px;
   font-size: 30px;
   margin-top: 10px;
+} */
+
+#miniTitle{
+  cursor: pointer;
+  color:black;
 }
+
 .btns{
   margin-left: 10%;
   margin-top: 10px;
+  display: flex;
+  flex-direction: row-reverse;
 }
 .btn{
   margin: 15px;
-  height: 50px;
-  width: 100px;
+  /* height: 50px; */
+  /* width: 100px; */
   font-size: larger;
   cursor: pointer;
   color: white;
@@ -93,24 +154,40 @@ body {
 
 .title{
 
-margin-top: 8%;
+/* margin-top: 8%;
 margin-left: 60%;
 width: 550px;
 height: 800px;
 position: relative ;
-text-align: right;
+text-align: right; */
+
+
+  width: 40%;
+  position: relative;
+  text-align: right;
+  display: flex;
+  align-items: center;
 
 }
 #titleTxt{ 
-color: black;
+/* color: black;
 margin-right: 10%;
 margin-top: 10%;
-font-size: 50px;
+font-size: 50px; */
+
+  display: flex;
+  color: black;
+  margin-right: 10%;
+  margin-top: 10%;
+
+  flex-direction: column;
+
 }
 #span-title{
   animation: Animation 2s;
   font-size: 65px;
   font-weight: bold;
+  margin: unset;
 }
 #span-soul{
 animation: Animation 4s;  
@@ -147,12 +224,23 @@ animation-delay: 3s;
 /* intro component */
  
 .intro{
-  margin-top: 5%;
+  /* margin-top: 5%;
   background-color:#f3f3f3e9 ;
   margin-left: 10%;
   border-radius: 5%;
   height: 650px;
-  width: 1000px;
+  width: 1000px; */
+
+  margin-top: 5%;
+  background-color: #f3f3f3e9;
+  margin-left: 10%;
+  border-radius: 5%;
+  height: 650px;
+  width: 50%;
+  max-width: 900px;
+  display: flex;
+  flex-direction: row-reverse;
+  padding-right: 100px;
 }
 
 /* .imgTxt{
@@ -164,26 +252,41 @@ animation-delay: 3s;
 } */
 
 #intro-img{
-  margin-top: 8%;
+  /* margin-top: 8%;
   width: 450px;
   height: 380px;
   position: absolute;
   margin-left: 55%;
+  z-index: -1; */
+
+
+  position: absolute;
+  margin-left: 8%;
   z-index: -1;
+  
+
 }
 
 h1{
   text-align: center;
 }
 #intro-txt{
-  position: relative;
+  /* position: relative;
   direction: rtl;
   font-size: 20px;
   text-align: right;
   padding-top: 10%;
   height: 300px;
   width: 650px;
-  padding-left: 25%;
+  padding-left: 25%; */
+
+  position: relative;
+  direction: rtl;
+  font-size: 20px;
+  text-align: right;
+  padding-top: 10%;
+  padding-left: 70px;
+
 }
 
 
